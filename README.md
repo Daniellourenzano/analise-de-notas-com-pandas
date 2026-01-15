@@ -1,0 +1,40 @@
+# 📊 Análise de Notas de Alunos com Pandas
+
+Projeto simples em Python para análise de dados de alunos utilizando a biblioteca **pandas** e visualização com **matplotlib**.
+
+O objetivo do projeto é praticar:
+- leitura de arquivos CSV
+- manipulação de dados com pandas
+- estatísticas básicas
+- organização de código em funções
+- geração de gráficos
+
+---
+
+## 📁 Estrutura do Projeto
+
+pandaspj1/
+│── projetopandas.py
+│── data.csv
+│── README.md
+
+
+---
+
+## 📄 Sobre o arquivo CSV
+
+O arquivo `data.csv` deve conter as seguintes colunas:
+
+- `nome` → nome do aluno
+- `idade` → idade do aluno
+- `nota` → nota do aluno
+
+Exemplo:
+
+```csv
+nome;idade;nota
+Ana;20;8.5
+Bruno;22;7.0
+Carlos;21;6.5
+Daniel;19;9.0
+Eduarda;23;8.0
