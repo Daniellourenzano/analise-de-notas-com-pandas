@@ -14,9 +14,9 @@ O objetivo do projeto é praticar:
 ## 📁 Estrutura do Projeto
 
 pandaspj1/
+
 │── projetopandas.py
 │── data.csv
-│── README.md
 
 
 ---
