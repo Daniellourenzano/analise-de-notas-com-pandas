@@ -38,3 +38,4 @@ Bruno;22;7.0
 Carlos;21;6.5
 Daniel;19;9.0
 Eduarda;23;8.0
+iracema;18;9.5
