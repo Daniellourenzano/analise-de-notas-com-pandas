@@ -3,6 +3,27 @@ import matplotlib.pyplot as plt
 import sys
 import os
 
+def validacao():
+    base_dir = os.path.dirname(__file__)
+    caminho_csv = os.path.join(base_dir, "usuario_senha.csv")
+    usuario_senha = pd.read_csv(caminho_csv, sep = ";")
+    
+    while True:
+        tentativa_usuario = input("digite o usuário: ")
+        if  tentativa_usuario not in usuario_senha["usuario"].values:
+            print("usuário inválido")
+        else:
+            break
+    senha_correta = usuario_senha.loc[usuario_senha["usuario"] == tentativa_usuario, "senha"].values[0]
+    while True:
+        tentativa_senha = input("digite a senha: ")
+        if tentativa_senha != str(senha_correta):
+            print("senha inválida")
+        else:
+            break
+    return print("bem-vindo")
+    
+        
 def mostrar_tabela():
     print("parte 1: mostrar elementos basicos da tabela")
     base_dir = os.path.dirname(__file__)
@@ -97,7 +118,7 @@ def main():
     ranking(dados)
     grafico(notas, maiornota, menornota, dados)
 
-
+validacao()
 decisao = input("deseja fazer a análise a respeito das notas?").lower()
 if decisao.startswith("s"):
     main()
