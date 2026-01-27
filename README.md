@@ -41,14 +41,23 @@ Carlos;21;6.5
 Daniel;19;9.0
 Eduarda;23;8.0
 iracema;18;9.5
-## 📄 Sobre o arquivo CSV de usuário e senha
+```
 
-O arquivo `data.csv` deve conter as seguintes colunas:
+---
 
-- `usuario` → usuário da administração
-- `senha` → senha da administração
+## 🔐 Autenticação de Usuário
 
-Exemplo:
+O sistema possui uma etapa de login antes da execução da análise de dados.  
+As credenciais são armazenadas em um arquivo CSV simples.
+
+### 📄 Sobre o arquivo `usuario_senha.csv`
+
+Esse arquivo deve conter as seguintes colunas:
+
+- `usuario` → usuário autorizado a acessar o sistema  
+- `senha` → senha correspondente ao usuário  
+
+### 🧩 Estrutura do arquivo
 
 ```csv
 usuario;senha
